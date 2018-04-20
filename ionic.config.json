@@ -1,0 +1,8 @@
+{
+  "name": "connect.v2.mobile",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
