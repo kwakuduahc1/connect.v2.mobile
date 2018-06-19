@@ -1,0 +1,32 @@
+<!--
+  Generated template for the TasksPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tasks</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h1>Select your program</h1>
+  <ion-list>
+    <ion-item>
+      <button ion-button *ngFor="let p of programs |tail : 1" (click)="getTasks(p.ProgramsID)">{{p.ProgramCode}}</button>
+    </ion-item>
+  </ion-list>
+  <ul class="list-group">
+    <li class="">
+      <ion-item>
+        <ion-label>Filter</ion-label>
+        <ion-input type="search" #task class="form-control" placeholder="Type a procedure to find it" ></ion-input>
+      </ion-item>
+    </li>
+    <ion-list-header [hidden]="false">Procedures</ion-list-header>
+    <li class="list-group-item" *ngFor="let t of tasks |filterBy : ['Task']:task.value;let ix=index" (click)="viewSteps(t)"><p>{{ix+1}}. {{t.Task}}</p></li>
+  </ul>
+</ion-content>

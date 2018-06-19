@@ -3,15 +3,43 @@
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card>
+    <ion-card-header>
+      Campus Connection <ion-badge item-end>Version 2.1</ion-badge>
+    </ion-card-header>
+    <ion-card-content>
+      Campus Connection version 2 has been completely rebuilt from the scratch to offer more offline interaction and faster load times.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Available Sections
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <button ion-item>
+          <ion-icon name="medical" item-start></ion-icon>
+          Nursing Procedures
+        </button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      In progress
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <button ion-item>
+          <ion-icon name="cart" item-start></ion-icon>
+          Objectives questions
+        </button>
+        <button ion-item>
+          <ion-icon name="heart" item-start></ion-icon>
+          Articles
+        </button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

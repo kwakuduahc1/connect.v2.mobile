@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\assets",
+    "\\src\\model",
+    "\\src\\pages",
+    "\\src\\pages\\tasks",
+    "\\src\\providers",
+    "\\src\\providers\\http",
+    "\\src\\providers\\sql"
+  ],
+  "SelectedNode": "\\config.xml",
+  "PreviewInSolutionExplorer": false
+}

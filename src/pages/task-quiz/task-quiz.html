@@ -1,0 +1,41 @@
+<!--
+  Generated template for the TaskQuizPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Quiz Mode</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+   <ion-card-content>
+      <ion-item style="word-wrap:normal">Task : {{task}}</ion-item>
+    </ion-card-content>
+
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-md-6>
+        <ul class="list-group">
+          <li class="list-group-header">Double click in the order you wish</li>
+          <li class="list-group-item" *ngFor="let s of tasks; let ix=index">
+            {{ix+1}}. {{s.Step}}<button (click)="add(s)" class="btn btn-info" [disabled]="s.Selected">Add</button>
+          </li>
+        </ul>
+      </ion-col>
+      <ion-col col-md-6>
+        <ul class="list-group">
+          <li class="list-group-header">Your order</li>
+          <li class="list-group-item" *ngFor="let s of arranged; let ix=index" [ngClass]="isMarked && s.isCorrect ? 'text-success' : 'text-danger'">
+            {{ix+1}}. {{s.Step}}<button class="btn btn-warning" (click)="remove(s)">Remove</button>
+          </li>
+        </ul>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button large (click)="mark()" class="btn btn-default">Mark</button>
+</ion-content>
