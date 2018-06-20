@@ -20,7 +20,7 @@
   <ion-grid>
     <ion-row>
       <ion-col col-md-6>
-        <ul class="list-group">
+        <ul class="list-group"> 
           <li class="list-group-header">Double click in the order you wish</li>
           <li class="list-group-item" *ngFor="let s of tasks; let ix=index">
             {{ix+1}}. {{s.Step}}<button (click)="add(s)" class="btn btn-info" [disabled]="s.Selected">Add</button>

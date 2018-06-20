@@ -2,15 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\assets",
-    "\\src\\model",
     "\\src\\pages",
+    "\\src\\pages\\steps",
+    "\\src\\pages\\task-quiz",
     "\\src\\pages\\tasks",
     "\\src\\providers",
     "\\src\\providers\\http",
     "\\src\\providers\\sql"
   ],
-  "SelectedNode": "\\config.xml",
   "PreviewInSolutionExplorer": false
 }
